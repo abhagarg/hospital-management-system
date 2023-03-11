@@ -1,4 +1,6 @@
 package requirement;
+
+import java.util.*;
 public class PatientRecord 
 {
   int patientid;
@@ -9,13 +11,22 @@ public class PatientRecord
   String address;
   String ailment;
   
- public void addPatient()
- {
- }
- 
- public void removePatient()
- {
- }
+  public PatientRecord() 
+  {
+     Scanner input=new Scanner(System.in);
+     System.out.println("Enter id:");
+     patientid=input.nextInt();
+     System.out.println("Enter name:");
+     patientname=input.nextLine();
+     System.out.println("Enter age:");
+     patientage=input.nextInt();
+     System.out.println("Enter phone number:");
+     phonenumber=input.nextLine();
+     System.out.println("Enter gender:");
+     gender=input.nextLine();
+     System.out.println("Enter address:");
+     address=input.nextLine();
+  }
  
  public void getPatientRecord()
  {
